@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <h3>Lab Details</h3>
+	<div class="row " style="margin-bottom: 8px">
+                        <div class="col-sm-12">
+                        <div class="form-group row ">
+						<div class="col-sm-2"> 
+         							<button type="button"  [disabled]="searchBtnDisable" (click)="searchOnClick()" class="btn btn-primary float-right">Search</button>
+                        </div>      
+                        </div>
+                        </div>
+    </div>
+
+
+
+<div class="form-group row">
+<table class="table">
+            <thead>
+                <tr>
+					<th>SNo</th>
+					<th>Id</th>
+                    <th>Name</th>
+                    <th>Sex</th>
+                    <th>Address</th>
+                    <th>Phoneno</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr *ngFor="let lb of lb; let i=index">
+                  	<td>{{i+1}}</td>
+                  	<td>{{lb.id}}</td>
+                    <td>{{lb.name}}</td>
+                    <td>{{lb.sex}}</td>
+                    <td>{{lb.address}}</td>
+                    <td>{{lb.phoneno}}</td>
+                </tr>
+           </tbody>
+        </table>
+    </div>
+
+
+</div>
+    
+
